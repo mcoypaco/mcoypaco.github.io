@@ -1,0 +1,9 @@
+<div layout="column" layout-align="center center">
+	<md-subheader>Follow me</md-subheader>
+	<div layout="row" layout-align="center center">
+		<md-button class="md-icon-button" ng-repeat="link in vm.profile.links" href="{{link.url}}" target="_blank">
+		    <md-icon class="mdi {{link.icon}} grey"></md-icon>
+		    <md-tooltip md-direction="top">{{link.label}}</md-tooltip>
+		</md-button>
+	</div>
+</div>
