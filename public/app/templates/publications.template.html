@@ -1,0 +1,19 @@
+<md-card>
+	<md-card-title>
+		<md-card-title-text>
+        	<span class="md-headline">Publications</span>
+      	</md-card-title-text>
+	</md-card-title>
+	<md-card-content>
+		<md-list>
+			<md-list-item class="md-3-line" ng-repeat="publication in vm.profile.publications">
+				<img ng-src="{{publication.image}}" class="md-avatar">
+				<div class="md-list-item-text">
+					<h3>{{publication.name}}</h3>
+					<h4>Release: {{publication.release}}</h4>
+					<p>{{publication.description}}</p>
+				</div>
+			</md-list-item>
+		</md-list>
+	</md-card-content>
+</md-card>

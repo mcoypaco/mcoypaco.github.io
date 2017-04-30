@@ -30,4 +30,39 @@ td, th{
     {
         display: none !important;
     }
+    .print-only, .print-only
+    {
+        display: block !important;    
+    }
+
+    .full-height-max {
+        max-height: none !important;
+    }
+
+    .page-break-after
+    {
+        float:none;
+        page-break-after: always;   
+    }
+
+    .avoid-page-break-after
+    {
+        page-break-after: avoid;   
+
+    }
+
+    .page-break-before
+    {
+        float:none;
+        page-break-before: always;   
+    }
+
+    .avoid-page-break-before
+    {
+        page-break-before: avoid;   
+    }
+
+    body{
+        overflow: visible;
+    }
 }

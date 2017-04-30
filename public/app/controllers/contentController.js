@@ -3,4 +3,6 @@ app
 		var vm = this;
 
 		vm.profile = Profile;
+
+		vm.present = new Date();
 	}]);

@@ -49,6 +49,27 @@ app
 					'about@home': {
 						templateUrl: '/app/templates/about.template.html',
 					},
+					'work-experince@home': {
+						templateUrl: '/app/templates/work-experince.template.html',
+					},
+					'skills@home': {
+						templateUrl: '/app/templates/skills.template.html',
+					},
+					'publications@home': {
+						templateUrl: '/app/templates/publications.template.html',
+					},
+					'education@home': {
+						templateUrl: '/app/templates/education.template.html',
+					},
+					'volunteer-work@home': {
+						templateUrl: '/app/templates/volunteer-work.template.html',
+					},
+					'interests@home': {
+						templateUrl: '/app/templates/interests.template.html',
+					},
+					'references@home': {
+						templateUrl: '/app/templates/references.template.html',
+					},
 				},
 			})
 	}]);

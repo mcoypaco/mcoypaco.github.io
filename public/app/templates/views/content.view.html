@@ -1,29 +1,41 @@
-<!-- Banner -->
-<md-card class="no-print">
-	<img src="/img/banner-2.png" class="md-card-image">
-</md-card>
+<div layout="row" layout-align="center center" flex>
+	<div layout="column" flex flex-gt-md="80" flex-xl="60">	
+		<!-- Banner -->
+		<md-card class="no-print">
+			<img src="/img/banner-2.png" class="md-card-image">
+		</md-card>
 
-<!-- Profile for mobile devices -->
-<md-card hide-gt-sm class="no-print">
-	<md-card-content>
-		<div ui-view="profile"></div>
-	</md-card-content>
-	<md-card-actions>
-		<div ui-view="social"></div>
-	</md-card-actions>
-</md-card>
+		<!-- Profile for mobile devices -->
+		<md-card hide-gt-sm class="no-print">
+			<md-card-content>
+				<div ui-view="profile"></div>
+			</md-card-content>
+			<md-card-actions>
+				<div ui-view="social"></div>
+			</md-card-actions>
+		</md-card>
+		<!-- About -->
+		<div ui-view="about" class="no-print"></div>
 
-<!-- About Me -->
-<div ui-view="about" class="no-print"></div>
+		<!-- Work Experience -->
+		<div ui-view="work-experince"></div>
 
-<!-- Work Experience -->
-<md-card>
-	<md-card-title>
-		<md-card-title-text>
-        	<span class="md-headline">Work Experience</span>
-      	</md-card-title-text>
-	</md-card-title>
-	<md-card-content>
-		
-	</md-card-content>
-</md-card>
+		<!-- Publications -->
+		<div ui-view="publications"></div>
+
+		<!-- Volunteer Work -->
+		<div ui-view="volunteer-work"></div>
+
+		<!-- Skills -->
+		<div ui-view="skills" class="no-print"></div>
+
+		<!-- Education -->
+		<div ui-view="education" class="no-print"></div>
+
+		<!-- Interests -->
+		<div ui-view="interests" class="no-print"></div>
+
+		<!-- References -->
+		<div ui-view="references"></div>
+	</div>
+</div>

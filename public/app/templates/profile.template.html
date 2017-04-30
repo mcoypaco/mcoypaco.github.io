@@ -5,11 +5,11 @@
 
     <md-list>
         <md-list-item class="md-2-line" ng-repeat="info in vm.profile.info">
-            <div class="md-avatar" layout="row" layout-align="center center">
-                <md-icon class="mdi {{info.icon}} grey"></md-icon>
+            <div class="md-avatar grey-bg" layout="row" layout-align="center center">
+                <md-icon class="mdi {{info.icon}}"></md-icon>
             </div>
             <div class="md-list-item-text">
-                <h4>{{info.label}}</h4>
+                <h3>{{info.label}}</h3>
                 <p>{{info.value}}</p>
             </div>
         </md-list-item>

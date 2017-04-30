@@ -1,0 +1,27 @@
+<md-card class="no-print">
+	<md-card-title>
+		<md-card-title-text>
+        	<span class="md-headline">Skills</span>
+      	</md-card-title-text>
+	</md-card-title>
+	<md-card-content>
+		<div ng-repeat="skill in vm.profile.skills">		
+			<md-subheader class="md-no-sticky">{{skill.category}}</md-subheader>
+			<md-chips ng-model="skill.items" readonly="true"></md-chips>
+		</div>
+	</md-card-content>
+</md-card>
+
+<div class="hidden print-only">	
+	<h3 class="md-headline">Skills</h3>
+
+	<div ng-repeat="skill in vm.profile.skills">
+		<md-subheader>{{skill.category}}</md-subheader>
+		<md-list layout="row" layout-wrap>
+			<md-list-item ng-repeat="item in skill.items" flex="30">
+				<span>{{item}}</span>
+			</md-list-item>
+		</md-list>
+		<md-divider ng-if="!$last"></md-divider>
+	</div>
+</div>

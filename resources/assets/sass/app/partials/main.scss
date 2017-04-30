@@ -140,6 +140,10 @@ md-content.dirty-white{
 	background: $red500;
 }
 
+.grey-bg{
+	background: $secondary-text;
+}
+
 
 .blur-white{
 	background: rgba(white,0.1);
@@ -419,4 +423,8 @@ md-contact-chips {
 
 .primary-border-left {
 	border-left: 3px solid $primary500;
+}
+
+.timeline-badge>img {
+	width:36px;
 }
