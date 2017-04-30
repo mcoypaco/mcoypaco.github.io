@@ -1,0 +1,15 @@
+<md-content layout="column" layout-align="space-between center" flex layout-padding>
+    <div layout="column" flex>    	
+	    <!-- Profile -->
+	    <div ui-view="profile"></div>
+	    <!-- About -->
+	    <div ui-view="about" hide-gt-sm></div>
+	    <!-- Education -->
+		<div ui-view="education" hide-gt-sm></div>
+	    <!-- Skills -->
+	    <div ui-view="skills" hide-gt-sm></div>
+		<!-- Interests -->
+		<div ui-view="interests" hide-gt-sm></div>
+    </div>
+    <div ui-view="social" class="no-print"></div>
+</md-content>
