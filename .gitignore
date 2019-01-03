@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
 /dist
-/data/info.prod.js
+/data/info.js
 
 # local env files
 .env.local
